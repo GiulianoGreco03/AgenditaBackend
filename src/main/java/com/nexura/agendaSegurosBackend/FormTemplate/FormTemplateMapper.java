@@ -24,7 +24,8 @@ public class FormTemplateMapper {
     }
 
     public FormTemplateDTO toDTO(FormTemplateEntity entity){
-        return new FormTemplateDTO(entity.getTitle(),
+        return new FormTemplateDTO(entity.getId(),
+                entity.getTitle(),
                 entity.textFields.stream().map(textfieldTemplateMapper::toDTO).toList(),
                 entity.checkboxes.stream().map(checkboxTemplateMapper::toDTO).toList(),
                 entity.selects.stream().map(selectTemplateMapper::toDTO).toList());

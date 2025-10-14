@@ -1,6 +1,6 @@
 package com.nexura.agendaSegurosBackend.Client;
 
-import com.nexura.agendaSegurosBackend.Adress.AddressDTO;
+import com.nexura.agendaSegurosBackend.Address.AddressDTO;
 
 import java.time.LocalDate;
 

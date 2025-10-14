@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/formularios_plantilla")
+@RequestMapping("/api/v1/formularios-plantilla")
 public class FormTemplateController {
     private final FormTemplateService formTemplateService;
 
@@ -21,5 +21,10 @@ public class FormTemplateController {
     @PostMapping
     public FormTemplateDTO postFormTemplate(@RequestBody FormTemplateDTO FormTemplate){
         return formTemplateService.postFormTemplate(FormTemplate);
+    }
+
+    @PutMapping("/{id}")
+    public FormTemplateDTO putFormTemplate(@PathVariable Long id,@RequestBody FormTemplateDTO FormTemplate){
+        return formTemplateService.updateFormTemplete(id, FormTemplate);
     }
 }

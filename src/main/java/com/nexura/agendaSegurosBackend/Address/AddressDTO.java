@@ -1,4 +1,4 @@
-package com.nexura.agendaSegurosBackend.Adress;
+package com.nexura.agendaSegurosBackend.Address;
 
 public record AddressDTO(
      String calle,

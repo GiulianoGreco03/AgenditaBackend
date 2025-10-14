@@ -1,6 +1,6 @@
 package com.nexura.agendaSegurosBackend.Client;
 
-import com.nexura.agendaSegurosBackend.Adress.AddressMapper;
+import com.nexura.agendaSegurosBackend.Address.AddressMapper;
 import org.springframework.stereotype.Component;
 
 @Component

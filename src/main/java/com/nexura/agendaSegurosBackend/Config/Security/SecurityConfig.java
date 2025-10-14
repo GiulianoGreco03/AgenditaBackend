@@ -27,7 +27,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/auth/**").permitAll()
-                        .requestMatchers("/api/v1/formularios_plantilla/**").permitAll()
+                        .requestMatchers("/api/v1/formularios-plantilla/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManager ->

@@ -1,8 +1,8 @@
 package com.nexura.agendaSegurosBackend.Client;
 
 import com.nexura.agendaSegurosBackend.Config.Auth.JWT.JwtService;
-import com.nexura.agendaSegurosBackend.Adress.AddressEntity;
-import com.nexura.agendaSegurosBackend.Adress.AddressRepository;
+import com.nexura.agendaSegurosBackend.Address.AddressEntity;
+import com.nexura.agendaSegurosBackend.Address.AddressRepository;
 import com.nexura.agendaSegurosBackend.User.EmailNotFoundException;
 import com.nexura.agendaSegurosBackend.User.UserEntity;
 import com.nexura.agendaSegurosBackend.User.UserRepository;

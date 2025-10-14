@@ -1,6 +1,6 @@
 package com.nexura.agendaSegurosBackend.Client;
 
-import com.nexura.agendaSegurosBackend.Adress.AddressEntity;
+import com.nexura.agendaSegurosBackend.Address.AddressEntity;
 import com.nexura.agendaSegurosBackend.Vehicle.VehicleEntity;
 import com.nexura.agendaSegurosBackend.User.UserEntity;
 import jakarta.persistence.*;
@@ -17,7 +17,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clientes")
+@Table(name = "clients")
 public class ClientEntity {
 
     @Id

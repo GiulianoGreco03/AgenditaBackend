@@ -1,4 +1,4 @@
-package com.nexura.agendaSegurosBackend.Adress;
+package com.nexura.agendaSegurosBackend.Address;
 
 import com.nexura.agendaSegurosBackend.Client.ClientEntity;
 import jakarta.persistence.*;

@@ -7,6 +7,7 @@ import com.nexura.agendaSegurosBackend.FormTemplate.SelectTemplate.SelectTemplat
 import java.util.List;
 
 public record FormTemplateDTO(
+        Long id,
         String title,
         List<TextFieldTemplateDTO> textFields,
         List<CheckboxTemplateDTO> checkboxes,
