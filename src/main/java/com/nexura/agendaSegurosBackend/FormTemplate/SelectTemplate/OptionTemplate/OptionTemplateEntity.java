@@ -18,7 +18,7 @@ public class OptionTemplateEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String optionValue;
+    private String title;
 
     @ManyToOne
     @JoinColumn(name = "select_templates_id", nullable = false, updatable = false)

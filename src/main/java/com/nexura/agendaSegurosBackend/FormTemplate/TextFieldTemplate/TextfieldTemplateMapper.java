@@ -1,17 +1,11 @@
 package com.nexura.agendaSegurosBackend.FormTemplate.TextFieldTemplate;
 
+import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
 
-@Component
-public class TextfieldTemplateMapper {
-    public TextFieldTemplateDTO toDTO(TextFieldTemplateEntity entity){
-        return new TextFieldTemplateDTO(entity.getTitle(), entity.getOrder());
-    }
+@Mapper(componentModel = "spring")
+public interface TextfieldTemplateMapper {
+    public TextFieldTemplateResponseDTO toDTO(TextFieldTemplateEntity entity);
 
-    public TextFieldTemplateEntity toEntity(TextFieldTemplateDTO dto){
-        return TextFieldTemplateEntity.builder()
-                .title(dto.title())
-                .order(dto.order())
-                .build();
-    }
+    public TextFieldTemplateEntity toEntity(TextFieldTemplateCreateDTO dto);
 }

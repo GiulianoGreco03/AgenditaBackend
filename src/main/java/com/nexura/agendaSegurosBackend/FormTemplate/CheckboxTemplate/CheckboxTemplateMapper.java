@@ -1,17 +1,12 @@
 package com.nexura.agendaSegurosBackend.FormTemplate.CheckboxTemplate;
 
+import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
 
-@Component
-public class CheckboxTemplateMapper {
-    public CheckboxTemplateDTO toDTO(CheckboxTemplateEntity entity){
-        return new CheckboxTemplateDTO(entity.getTitle(), entity.getOrder());
-    }
+@Mapper(componentModel = "spring")
+public interface CheckboxTemplateMapper {
 
-    public CheckboxTemplateEntity toEntity(CheckboxTemplateDTO dto){
-        return CheckboxTemplateEntity.builder()
-                .title(dto.title())
-                .order(dto.order())
-                .build();
-    }
+    public CheckboxTemplateResponseDTO toDTO(CheckboxTemplateEntity entity);
+
+    public CheckboxTemplateEntity toEntity(CheckboxTemplateCreateDTO dto);
 }

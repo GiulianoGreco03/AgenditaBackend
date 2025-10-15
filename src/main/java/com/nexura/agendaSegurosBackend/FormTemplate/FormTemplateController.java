@@ -14,17 +14,17 @@ public class FormTemplateController {
     }
 
     @GetMapping
-    public List<FormTemplateDTO> getFormTemplates(){
+    public List<FormTemplateResponseDTO> getFormTemplates(){
         return formTemplateService.getFormTemplates();
     }
 
     @PostMapping
-    public FormTemplateDTO postFormTemplate(@RequestBody FormTemplateDTO FormTemplate){
+    public FormTemplateResponseDTO postFormTemplate(@RequestBody FormTemplateCreateDTO FormTemplate){
         return formTemplateService.postFormTemplate(FormTemplate);
     }
 
     @PutMapping("/{id}")
-    public FormTemplateDTO putFormTemplate(@PathVariable Long id,@RequestBody FormTemplateDTO FormTemplate){
+    public FormTemplateResponseDTO putFormTemplate(@PathVariable Long id, @RequestBody FormTemplateCreateDTO FormTemplate){
         return formTemplateService.updateFormTemplete(id, FormTemplate);
     }
 }

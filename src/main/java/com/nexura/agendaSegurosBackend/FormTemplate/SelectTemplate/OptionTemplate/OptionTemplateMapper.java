@@ -1,17 +1,12 @@
 package com.nexura.agendaSegurosBackend.FormTemplate.SelectTemplate.OptionTemplate;
 
-import org.springframework.stereotype.Component;
+import org.mapstruct.Mapper;
 
-@Component
-public class OptionTemplateMapper {
 
-    public OptionTemplateDTO toDTO(OptionTemplateEntity entity){
-        return new OptionTemplateDTO(entity.getOptionValue());
-    }
+@Mapper(componentModel = "spring")
+public interface OptionTemplateMapper {
 
-    public OptionTemplateEntity toEntity(OptionTemplateDTO dto){
-        OptionTemplateEntity entity = new OptionTemplateEntity();
-        entity.setOptionValue(dto.optionValue());
-        return entity;
-    }
+     OptionTemplateResponseDTO toDTO(OptionTemplateEntity entity);
+
+     OptionTemplateEntity toEntity(OptionTemplateCreateDTO dto);
 }
